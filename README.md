@@ -97,3 +97,15 @@ In this lab, we have to design in detail for some classes
   - Class : Card, Invoice, InvoiceHandler, Order, RentBikeController, RentBikeHandler, BarcodeHandler
 - Nguyễn Quốc Anh :
   Class : ListDockToReturnHandler, ViewBikeController, BikeInformationHandler, Bike, StandardElectricBike, StandardBike, TwinBike
+
+# LAB 07: Data modeling
+
+## Tasks:
+
+Implement database for EcoBike system. Write detail specifications for the database
+
+## Contributions
+
+- Nguyen Quoc Anh: Database Specification
+- Dinh Huu Dai: SqLite file, Reademe.md
+- Pham Thanh Bien: ER Diagram
