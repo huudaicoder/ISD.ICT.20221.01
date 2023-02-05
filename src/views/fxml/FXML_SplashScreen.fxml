@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: E5FFCC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="580.0" fitWidth="793.0" layoutX="393.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../detailed_design/interface_design/images/icon/ecoBikeIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="555.0" layoutY="35.0" text="ECO BIKE " textFill="#212421">
+         <font>
+            <Font name="System Bold" size="56.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
