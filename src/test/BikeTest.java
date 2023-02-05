@@ -10,7 +10,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.rules.ExpectedException;
 
-import entities.NormalBike;
+import entities.Bike;
 import exceptions.ecobike.InvalidEcoBikeInformationException;
 
 public class BikeTest {
@@ -33,7 +33,7 @@ public class BikeTest {
 			double deposit, String currency, String create_date) {
 		boolean isValid = true;
 		try {
-			NormalBike bike = new NormalBike(name, bike_type, bike_image, bar_code, bike_rental_price,
+			Bike bike = new Bike(name, bike_type, bike_image, bar_code, bike_rental_price,
 					deposit, currency, create_date);					
 		} catch (Exception e) {
 			isValid = false;
@@ -59,7 +59,7 @@ public class BikeTest {
 	public void BikeConstructorTestException(String name, String bike_type, String bike_image, String bar_code, double bike_rental_price,
 			double deposit, String currency, String create_date) {
 		try { 
-			NormalBike bike = new NormalBike(name, bike_type, bike_image, bar_code, bike_rental_price,
+			Bike bike = new Bike(name, bike_type, bike_image, bar_code, bike_rental_price,
 					deposit, currency, create_date);
 		} catch (Exception e) {
 			assertTrue(e instanceof InvalidEcoBikeInformationException);
@@ -76,7 +76,7 @@ public class BikeTest {
 	public void BikeConstructorTestNullException(String name, String bike_type, String bike_image, String bar_code, double bike_rental_price,
 			double deposit, String currency, String create_date) {
 		try { 
-			NormalBike bike = new NormalBike(name, bike_type, bike_image, bar_code, bike_rental_price,
+			Bike bike = new Bike(name, bike_type, bike_image, bar_code, bike_rental_price,
 					deposit, currency, create_date);
 		} catch (Exception e) {
 			assertTrue(e instanceof InvalidEcoBikeInformationException);

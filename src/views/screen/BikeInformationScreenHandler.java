@@ -26,7 +26,7 @@ import java.util.ResourceBundle;
 /**
  * This class creates a handler for getting customer's behaviors on the bike information screen
  *
- * @author chauntm
+ * @author bienpt
  */
 public class BikeInformationScreenHandler extends EcoBikeBaseScreenHandler implements PropertyChangeListener {
 

@@ -8,14 +8,13 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import controllers.PaymentController;
-import interfaces.InterbankInterface;
 
 class validateCardHolderNameTest {
 
 	private PaymentController controllers;
 	@BeforeEach
 	void setUp() throws Exception {
-		controllers = new PaymentController(null);
+		controllers = new PaymentController();
 	}
 
 	@ParameterizedTest
