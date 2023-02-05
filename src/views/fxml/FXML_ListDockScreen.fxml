@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="mainScreenIcon" fitHeight="80.0" fitWidth="80.0" layoutX="43.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../detailed_design/interface_design/images/icon/ecobike_logo_transparent.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="128.0" layoutY="69.0" text="Select dock to return bike">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="28.0" layoutY="138.0" prefHeight="358.0" prefWidth="444.0">
+         <content>
+            <VBox fx:id="dockVBox" prefHeight="343.0" prefWidth="430.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
