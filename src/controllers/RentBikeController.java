@@ -86,28 +86,28 @@ public class RentBikeController extends EcoBikeBaseController {
 	
 	private boolean checkCardIdentity(CreditCard card) {
 		/**
-		 * ict_group6_2021
-		 * Group 6
-		 * 936
-		 * 11/25
+		 * 135393_group01_2022
+		 * Group 01
+		 * 341
+		 * 02/25
 		 */
-		if (!card.getCardHolderName().equalsIgnoreCase("Group 6")) {
+		if (!card.getCardHolderName().equalsIgnoreCase("Group 01")) {
 			System.out.println(card.getCardHolderName());
 			System.out.println("Name failed");
 			return false;
 		}
 		
-		if (!card.getCardNumber().equalsIgnoreCase("ict_group6_2021")) {
+		if (!card.getCardNumber().equalsIgnoreCase("135393_group01_2022")) {
 			System.out.println("card number failed");
 			return false;
 		}
 		
-		if (!card.getCardSecurity().equalsIgnoreCase("936")) {
+		if (!card.getCardSecurity().equalsIgnoreCase("341")) {
 			System.out.println("cvv failed");
 			return false;
 		}
 		
-		if (!card.getExpirationDate().equalsIgnoreCase("11/25")) {
+		if (!card.getExpirationDate().equalsIgnoreCase("02/25")) {
 			System.out.println("expiration date failed");
 			return false;
 		}

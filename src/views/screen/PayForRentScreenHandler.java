@@ -1,5 +1,6 @@
 package views.screen;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -13,7 +14,9 @@ import entities.CreditCard;
 import entities.Dock;
 import entities.Invoice;
 import exceptions.ecobike.EcoBikeException;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import utils.Configs;
 import views.screen.popup.PopupScreen;
 
 /**
@@ -62,6 +65,7 @@ public class PayForRentScreenHandler extends PaymentScreenHandler {
     
     protected void initialize(){
     	super.initializeComponent();
+    	bikeImage.setImage(new Image(new File(Configs.BIKE_IMAGE_LIB + "/" + this.bikeToRent.getBikeImage()).toURI().toString()));
     	bikeName.setText(this.bikeToRent.getName());
     	bikeType.setText(this.bikeToRent.getBikeType());
     	rentalTime.setText(Integer.toString(RentBikeController.getRentBikeServiceController(null).pauseBikeRental(bikeToRent))+" mins");

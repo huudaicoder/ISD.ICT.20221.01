@@ -16,7 +16,7 @@ import views.screen.popup.DockForReturnHandler;
 /**
  * This class creates a handler for getting customer's behaviors on the bike information screen
  *
- * @author chauntm
+ * @author bien
  */
 public class SelectDockToReturnBikeScreenHandler extends EcoBikeBaseScreenHandler {
 	@FXML
