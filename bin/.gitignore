@@ -1,10 +1,10 @@
-/App.class
+/lib/
 /boundaries/
 /controllers/
 /entities/
 /exceptions/
 /interfaces/
-/lib/
 /test/
 /utils/
 /views/
+/App.class
