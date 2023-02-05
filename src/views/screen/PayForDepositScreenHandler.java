@@ -1,6 +1,5 @@
 package views.screen;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -15,15 +14,13 @@ import entities.strategies.DepositFactory;
 import exceptions.ecobike.EcoBikeException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import utils.Configs;
 import views.screen.popup.PopupScreen;
 
 /**
  * This is the class handler for deposit screen
  *
- * @author Bien
+ * @author Duong
  */
 public class PayForDepositScreenHandler extends PaymentScreenHandler {
     @FXML
@@ -60,7 +57,6 @@ public class PayForDepositScreenHandler extends PaymentScreenHandler {
     
     protected void initialize() {    
     	super.initializeComponent();
-    	bikeImage.setImage(new Image(new File(Configs.BIKE_IMAGE_LIB + "/" + this.bikeToRent.getBikeImage()).toURI().toString()));
     	bikeName.setText(this.bikeToRent.getName());
     	bikeType.setText(this.bikeToRent.getBikeType());
     	depositPrice.setText(Double.toString(DepositFactory.getDepositStrategy().getDepositPrice((float)bikeToRent.getDeposit())) + this.bikeToRent.getCurrency());

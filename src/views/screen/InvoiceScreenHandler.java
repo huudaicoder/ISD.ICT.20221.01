@@ -14,7 +14,7 @@ import java.util.ResourceBundle;
 /**
  * This is the class handler for invoice screen
  *
- * @author Bien
+ * @author Duong
  */
 public class InvoiceScreenHandler extends EcoBikeBaseScreenHandler {
     private static InvoiceScreenHandler invoiceScreenHandler = null;

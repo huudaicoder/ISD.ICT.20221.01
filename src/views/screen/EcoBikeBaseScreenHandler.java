@@ -15,7 +15,7 @@ import java.util.Hashtable;
  * This class is the base for all screen handler class of the EcoBike
  * application
  *
- * @author anhnq
+ * @author chauntm
  */
 public abstract class EcoBikeBaseScreenHandler {
 

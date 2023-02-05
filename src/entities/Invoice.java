@@ -170,10 +170,7 @@ public class Invoice {
 	private void setTotal() {
 		this.total = 0;
 		for (PaymentTransaction trans : this.listTransaction) {
-			if(trans.getContent().equalsIgnoreCase("PAY_RENTAL"))
-				this.total -= trans.getAmount();
-			else
-				this.total += trans.getAmount();
+			this.total += trans.getAmount();
 		}
 	}
 

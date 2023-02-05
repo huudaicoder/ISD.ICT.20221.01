@@ -50,12 +50,6 @@ public abstract class Bike {
 	private String createDate;
 	
 	/**
-	 * The total time the customer has rent calculated in minute
-	 */
-	private int totalRentTime;
-
-	
-	/**
 	 * creator of the bike.
 	 */
 	private String creator;
@@ -273,13 +267,5 @@ public abstract class Bike {
 	
 	public Dock getCurrentDock() {
 		return this.currentDock;
-	}
-	
-	public int getTotalRentTime() {
-		return totalRentTime;
-	}
-
-	public void setTotalRentTime(int totalRentTime) {
-		this.totalRentTime = totalRentTime;
 	}
 }

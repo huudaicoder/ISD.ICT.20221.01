@@ -10,38 +10,34 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import controllers.EcoBikeInformationController;
-import entities.Bike;
+import entities.NormalBike;
 import entities.Dock;
 
 class BikeInformationControllerTest {
 	private EcoBikeInformationController controller;
-	private ArrayList<Bike> listBike;
+	private ArrayList<NormalBike> listBike;
 
 	@BeforeEach
 	void setUp() throws Exception {
 		boolean isOK = true;
 		try {
 			controller = new EcoBikeInformationController();
-			Bike bike1 = new Bike("ABC", "normal", "ABC/123", "ABC-123", 10, 300, "VND", "12/03/2021");
-			Bike bike2 = new Bike("ABC", "normal", "ABC/124", "ABC-124", 10, 300, "VND", "12/03/2021");
-			listBike = new ArrayList<Bike>();
+			NormalBike bike1 = new NormalBike("ABC", "normal", "ABC/123", "ABC-123", 10, 300, "VND", "12/03/2021");
+			NormalBike bike2 = new NormalBike("ABC", "normal", "ABC/124", "ABC-124", 10, 300, "VND", "12/03/2021");
+			listBike = new ArrayList<NormalBike>();
 			listBike.add(bike2);
 			listBike.add(bike1);
 			controller.setBikeList(listBike);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-				
+
 	}
 
 	@ParameterizedTest
-	@CsvSource({
-		"ABC-123, true",
-		"ABC-124, true",
-		"ABC-125, false",
-	})
+	@CsvSource({ "ABC-123, true", "ABC-124, true", "ABC-125, false", })
 	void test(String id, boolean expected) throws Exception {
-		assertTrue((controller.getBikeInformation(id).compareTo("ABC") == 0) == expected);			
+		assertTrue((controller.getBikeInformation(id).compareTo("ABC") == 0) == expected);
 	}
 
 }
