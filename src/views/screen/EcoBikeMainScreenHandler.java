@@ -35,6 +35,10 @@ public class EcoBikeMainScreenHandler extends EcoBikeBaseScreenHandler {
     @FXML
     private ImageView dock3;
     @FXML
+    private ImageView dock4;
+    @FXML
+    private ImageView dock5;
+    @FXML
     private ChoiceBox<String> choiceBox;
     @FXML
     private TextField searchBarField;
@@ -94,6 +98,20 @@ public class EcoBikeMainScreenHandler extends EcoBikeBaseScreenHandler {
         dock3.setOnMouseClicked(e -> {
 			try {
 				showDock(3);
+			} catch (NumberFormatException | SQLException | EcoBikeException e1) {
+				e1.printStackTrace();
+			}
+		});
+        dock4.setOnMouseClicked(e -> {
+			try {
+				showDock(4);
+			} catch (NumberFormatException | SQLException | EcoBikeException e1) {
+				e1.printStackTrace();
+			}
+		});
+        dock5.setOnMouseClicked(e -> {
+			try {
+				showDock(5);
 			} catch (NumberFormatException | SQLException | EcoBikeException e1) {
 				e1.printStackTrace();
 			}

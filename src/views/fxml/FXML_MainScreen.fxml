@@ -13,7 +13,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane fx:id="borPane_main" layoutX="7.0" prefHeight="600.0" prefWidth="1200.0">
+      <BorderPane fx:id="borPane_main" prefHeight="600.0" prefWidth="1200.0">
          <top>
             <Pane fx:id="headerPane" prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: E5FFCC;" BorderPane.alignment="CENTER">
                <children>
