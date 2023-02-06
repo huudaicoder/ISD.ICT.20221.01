@@ -23,7 +23,7 @@ import controllers.EcoBikeInformationController;
 /**
  * This class creates a handler for displaying the map and getting customer's activities on the main screen
  *
- * @author daidh
+ * @author bienpt
  */
 public class EcoBikeMainScreenHandler extends EcoBikeBaseScreenHandler {
 
@@ -34,10 +34,6 @@ public class EcoBikeMainScreenHandler extends EcoBikeBaseScreenHandler {
     private ImageView dock2;
     @FXML
     private ImageView dock3;
-    @FXML
-    private ImageView dock4;
-    @FXML
-    private ImageView dock5;
     @FXML
     private ChoiceBox<String> choiceBox;
     @FXML
@@ -98,20 +94,6 @@ public class EcoBikeMainScreenHandler extends EcoBikeBaseScreenHandler {
         dock3.setOnMouseClicked(e -> {
 			try {
 				showDock(3);
-			} catch (NumberFormatException | SQLException | EcoBikeException e1) {
-				e1.printStackTrace();
-			}
-		});
-        dock4.setOnMouseClicked(e -> {
-			try {
-				showDock(4);
-			} catch (NumberFormatException | SQLException | EcoBikeException e1) {
-				e1.printStackTrace();
-			}
-		});
-        dock5.setOnMouseClicked(e -> {
-			try {
-				showDock(5);
 			} catch (NumberFormatException | SQLException | EcoBikeException e1) {
 				e1.printStackTrace();
 			}

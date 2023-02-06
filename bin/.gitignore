@@ -1,4 +1,5 @@
 /lib/
+/App.class
 /boundaries/
 /controllers/
 /entities/
@@ -7,4 +8,3 @@
 /test/
 /utils/
 /views/
-/App.class
