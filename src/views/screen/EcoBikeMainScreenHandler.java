@@ -139,14 +139,26 @@ public class EcoBikeMainScreenHandler extends EcoBikeBaseScreenHandler {
     	            if (bike != null) {
     	            	BikeInformationScreenHandler.getBikeInformationScreenHandler(this.stage, this, bike).show();            	
     	            } else {
-    	            	PopupScreen.error("Cannot find bike with such name");
+    	            	bike = EcoBikeInformationController.getEcoBikeInformationController().getBikeInformationByBarcode(searchString);
+    	            	if (bike != null) {
+    	            		BikeInformationScreenHandler.getBikeInformationScreenHandler(this.stage, this, bike).show();
+    	            	}else {
+    	            		PopupScreen.error("Cannot find bike with such name");
+    	            	}    	
     	            }
     	        } else if (choiceBox.getValue().toString() == "Dock") {
     	        	Dock dock = EcoBikeInformationController.getEcoBikeInformationController().getDockInformationByName(searchString);
     	            if (dock != null) {
     	            	DockInformationScreenHandler.getDockInformationScreenHandler(this.stage, this, dock).show();
     	            } else {
-    	            	PopupScreen.error("Cannot find dock with such name");
+    	            	int searchInt = Integer.parseInt(searchString);
+    	            	dock = EcoBikeInformationController.getEcoBikeInformationController().getDockInformationByID(searchInt);
+    	            	if (dock != null) {
+        	            	DockInformationScreenHandler.getDockInformationScreenHandler(this.stage, this, dock).show();
+    	            	}else {
+    	            		PopupScreen.error("Cannot find dock with such name");
+    	            	}    	
+    	            	
     	            }
     	        }
     	} catch (Exception e) {

@@ -24,7 +24,7 @@
                   </Label>
                   <ImageView fx:id="mainScreenIcon" fitHeight="130.0" fitWidth="145.0" layoutX="8.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../Detail%20Design/Interface%20Design/images/ecoBikeIcon.png" />
+                        <Image url="@../../../detailed_design/interface_design/images/icon/ecoBikeIcon.png" />
                      </image>
                   </ImageView>
                </children>
@@ -122,7 +122,7 @@
                <children>
                   <ImageView fx:id="backIcon" fitHeight="80.0" fitWidth="80.0" layoutX="248.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                         <Image url="@../../../../ISD.ICT.20211-06/detailed_design/interface_design/images/icon/back_button.png" />
+                         <Image url="@../../../detailed_design/interface_design/images/icon/back_button.png" />
                      </image>
                   </ImageView>
                </children>

@@ -74,7 +74,7 @@ public abstract class Bike {
 	private PropertyChangeSupport statusNotifier;
 	private PropertyChangeSupport dockNotifier;
 	
-	protected Bike(String name, String licensePlateCode, String bikeImage, 
+	public Bike(String name, String licensePlateCode, String bikeImage, 
 			String bikeBarcode, String currencyUnit, 
 			String createDate) throws InvalidEcoBikeInformationException {
 		this.setName(name);

@@ -23,12 +23,12 @@
                         <Image url="@../../../detailed_design/interface_design/images/icon/ecoBikeIcon.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="161.0" layoutY="32.0" text="Invoice Screen">
+                  <Label layoutX="184.0" layoutY="32.0" text="Invoice Screen">
                      <font>
-                        <Font name="Segoe UI Bold" size="30.0" />
-                     </font>
-                  </Label>
-               </children>
+	                     <Font name="Segoe UI Bold" size="30.0" />
+	                 </font>
+	              </Label>
+                </children>
             </Pane>
          </top>
          <center>
@@ -176,7 +176,7 @@
                      </children>
                   </GridPane>
                   <Button fx:id="backToMainScreenButton" layoutX="508.0" layoutY="386.0" mnemonicParsing="false" style="-fx-border-color: rgb(0, 0, 0); -fx-border-radius: 10;" text="Back to main screen">
-                     <font>
+                  	<font>
                         <Font name="Segoe UI" size="18.0" />
                      </font>
                   </Button>
@@ -185,7 +185,7 @@
                         <Font name="Segoe UI Bold" size="24.0" />
                      </font>
                   </Label>
-               </children>
+                  </children>
             </Pane>
          </center>
       </BorderPane>
