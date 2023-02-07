@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #E5FFCC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0">
+         <top>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="130.0" fitWidth="145.0" layoutX="14.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../detailed_design/interface_design/images/icon/ecoBikeIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="165.0" layoutY="32.0" text="Pay for Rental">
+                     <font>
+                        <Font name="Segoe UI Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="500.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="cardHolderName" layoutX="880.0" layoutY="111.0" prefHeight="14.0" prefWidth="172.0" />
+                  <TextField fx:id="cardNumber" layoutX="880.0" layoutY="162.0" prefHeight="14.0" prefWidth="173.0" />
+                  <Label layoutX="716.0" layoutY="110.0" text="Card holder name">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="734.0" layoutY="160.0" text="Card number">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="726.0" layoutY="209.0" text="Expriation date">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="732.0" layoutY="256.0" text="Security code">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="confirmPaymentButton" layoutX="519.0" layoutY="379.0" mnemonicParsing="false" style="-fx-border-color: rgb(0, 0, 0); -fx-border-radius: 10;" text="Confirm payment">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="expirationDate" layoutX="880.0" layoutY="208.0" prefHeight="15.0" prefWidth="174.0" />
+                  <TextField fx:id="securityCode" layoutX="878.0" layoutY="255.0" prefHeight="15.0" prefWidth="175.0" />
+                  <GridPane layoutX="298.0" layoutY="116.0" prefHeight="142.0" prefWidth="350.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="145.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="205.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Bike rented:">
+                           <font>
+                              <Font name="Segoe UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Bike type:" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Segoe UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Time rented:" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Segoe UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="23.0" prefWidth="115.0" text="Rental price:" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bikeName" prefHeight="20.0" prefWidth="250.0" text="Honda A16" textAlignment="RIGHT" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bikeType" prefHeight="20.0" prefWidth="250.0" text="Ebike" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rentalTime" prefHeight="20.0" prefWidth="250.0" text="60 mins" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rentalPrice" prefHeight="20.0" prefWidth="250.0" text="600000 VND" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <ImageView fx:id="bikeImage" fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

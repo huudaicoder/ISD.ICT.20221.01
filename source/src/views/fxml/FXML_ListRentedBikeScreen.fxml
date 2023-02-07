@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="498.0" style="-fx-background-color: #E5FFCC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="mainScreenIcon" fitHeight="115.0" fitWidth="125.0" layoutX="28.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../detailed_design/interface_design/images/icon/ecoBikeIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="161.0" layoutY="69.0" text="Select bike to return">
+         <font>
+            <Font name="Segoe UI Bold" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="28.0" layoutY="138.0" prefHeight="358.0" prefWidth="444.0">
+         <content>
+           <VBox fx:id="bikeVBox" prefHeight="343.0" prefWidth="430.0" style="-fx-background-color: #E5FFCC;" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

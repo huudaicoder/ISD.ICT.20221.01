@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0"
+	prefWidth="1366.0" style="-fx-background-color: E5FFCC;"
+	xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<ImageView fitHeight="100.0" fitWidth="100.0" layoutX="14.0"
+			layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../images/ecoBikeIcon.png" />
+			</image>
+		</ImageView>
+		<Label layoutX="126.0" layoutY="41.0" text="Bike Information"
+			textFill="#40bf37">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<GridPane layoutX="123.0" layoutY="115.0" prefHeight="539.0"
+			prefWidth="1121.0">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES"
+					maxWidth="851.0" minWidth="10.0" prefWidth="795.0" />
+				<ColumnConstraints hgrow="SOMETIMES"
+					maxWidth="615.0" minWidth="10.0" prefWidth="326.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<GridPane>
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES"
+							maxWidth="407.0" minWidth="10.0" prefWidth="407.0" />
+						<ColumnConstraints hgrow="SOMETIMES"
+							maxWidth="391.0" minWidth="10.0" prefWidth="385.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<ImageView fitHeight="230.0" fitWidth="405.0"
+							pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../images/bikeSample.png" />
+							</image>
+						</ImageView>
+						<GridPane GridPane.columnIndex="1">
+							<columnConstraints>
+								<ColumnConstraints hgrow="SOMETIMES"
+									maxWidth="239.0" minWidth="10.0" prefWidth="207.0" />
+								<ColumnConstraints hgrow="SOMETIMES"
+									maxWidth="187.0" minWidth="10.0" prefWidth="178.0" />
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0"
+									prefHeight="30.0" vgrow="SOMETIMES" />
+							</rowConstraints>
+							<children>
+								<Label text="E-bike 2411">
+									<font>
+										<Font name="System Bold" size="24.0" />
+									</font>
+								</Label>
+								<Label text="Type:" GridPane.rowIndex="1">
+									<font>
+										<Font name="System Bold Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label text="Electric bike" GridPane.columnIndex="1"
+									GridPane.rowIndex="1">
+									<font>
+										<Font name="System Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="10.0" layoutY="130.0" text="Status:"
+									GridPane.rowIndex="2">
+									<font>
+										<Font name="System Bold Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="203.0" layoutY="130.0" text="Free"
+									GridPane.columnIndex="1" GridPane.rowIndex="2">
+									<font>
+										<Font name="System Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="10.0" layoutY="219.0" text="Battery:"
+									GridPane.rowIndex="3">
+									<font>
+										<Font name="System Bold Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="203.0" layoutY="219.0" text="90.5%"
+									GridPane.columnIndex="1" GridPane.rowIndex="3">
+									<font>
+										<Font name="System Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="10.0" layoutY="308.0"
+									text="Distance estimated:" GridPane.rowIndex="4">
+									<font>
+										<Font name="System Bold Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="203.0" layoutY="308.0" text="50km"
+									GridPane.columnIndex="1" GridPane.rowIndex="4">
+									<font>
+										<Font name="System Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="10.0" layoutY="397.0"
+									text="Renting price (per min):" GridPane.rowIndex="5">
+									<font>
+										<Font name="System Bold Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="217.0" layoutY="397.0" text="2.000 VND"
+									GridPane.columnIndex="1" GridPane.rowIndex="5">
+									<font>
+										<Font name="System Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="10.0" layoutY="365.0" text="Deposit:"
+									GridPane.rowIndex="6">
+									<font>
+										<Font name="System Bold Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="217.0" layoutY="365.0" text="450.000 VND"
+									GridPane.columnIndex="1" GridPane.rowIndex="6">
+									<font>
+										<Font name="System Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="10.0" layoutY="432.0"
+									text="Current location:" GridPane.rowIndex="7">
+									<font>
+										<Font name="System Bold Italic" size="18.0" />
+									</font>
+								</Label>
+								<Label layoutX="217.0" layoutY="432.0"
+									text="Kim Ma bike dock" GridPane.columnIndex="1"
+									GridPane.rowIndex="7">
+									<font>
+										<Font name="System Italic" size="18.0" />
+									</font>
+								</Label>
+							</children>
+						</GridPane>
+					</children>
+				</GridPane>
+				<GridPane prefHeight="497.0" prefWidth="448.0"
+					GridPane.columnIndex="1">
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES"
+							maxWidth="224.0" minWidth="10.0" prefWidth="201.0" />
+						<ColumnConstraints hgrow="SOMETIMES"
+							maxWidth="158.0" minWidth="10.0" prefWidth="125.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<Button mnemonicParsing="false" text="Rent this bike"
+							GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Button>
+						<Button disable="true" layoutX="148.0" layoutY="74.0"
+							mnemonicParsing="false" text="Pause rental"
+							GridPane.halignment="CENTER" GridPane.rowIndex="1">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Button>
+						<Button disable="true" layoutX="10.0" layoutY="252.0"
+							mnemonicParsing="false" text="Return bike"
+							GridPane.halignment="CENTER" GridPane.rowIndex="2"
+							GridPane.valignment="TOP">
+							<font>
+								<Font size="24.0" />
+							</font>
+						</Button>
+					</children>
+				</GridPane>
+			</children>
+		</GridPane>
+	</children>
+</AnchorPane>
