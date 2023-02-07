@@ -44,6 +44,8 @@ public class BikeInformationScreenHandler extends EcoBikeBaseScreenHandler imple
     @FXML
     private Label bikeDepositText;
     @FXML
+    private Label bikeBarcodeText;
+    @FXML
     private Button rentBikeButton;
     @FXML
     private Button returnBikeButton;
@@ -158,6 +160,7 @@ public class BikeInformationScreenHandler extends EcoBikeBaseScreenHandler imple
         bikeDistanceText.setText("100 km");
 //        bikeRentingText.setText(currentBike.getBikeRentalPrice() + " " + currentBike.getCurrency());
         bikeDepositText.setText(DepositFactory.getDepositStrategy().getDepositPrice((float)currentBike.getDeposit()) + " " + currentBike.getCurrency());
+        bikeBarcodeText.setText(currentBike.getBikeBarCode());
         
         if (currentBike.getCurrentDock() != null) {
         	bikeLocationTxt.setText(currentBike.getCurrentDock().getName());        	
