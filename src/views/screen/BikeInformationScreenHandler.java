@@ -26,7 +26,7 @@ import java.util.ResourceBundle;
 /**
  * This class creates a handler for getting customer's behaviors on the bike information screen
  *
- * @author chauntm
+ * @author bienpt
  */
 public class BikeInformationScreenHandler extends EcoBikeBaseScreenHandler implements PropertyChangeListener {
 
@@ -43,6 +43,8 @@ public class BikeInformationScreenHandler extends EcoBikeBaseScreenHandler imple
     private Label bikeDistanceText;
     @FXML
     private Label bikeDepositText;
+    @FXML
+    private Label bikeBarcodeText;
     @FXML
     private Button rentBikeButton;
     @FXML
@@ -158,6 +160,8 @@ public class BikeInformationScreenHandler extends EcoBikeBaseScreenHandler imple
         bikeDistanceText.setText("100 km");
 //        bikeRentingText.setText(currentBike.getBikeRentalPrice() + " " + currentBike.getCurrency());
         bikeDepositText.setText(DepositFactory.getDepositStrategy().getDepositPrice((float)currentBike.getDeposit()) + " " + currentBike.getCurrency());
+        
+        bikeBarcodeText.setText(currentBike.getBikeBarCode());
         
         if (currentBike.getCurrentDock() != null) {
         	bikeLocationTxt.setText(currentBike.getCurrentDock().getName());        	

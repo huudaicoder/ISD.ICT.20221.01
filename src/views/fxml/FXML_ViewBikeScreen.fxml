@@ -42,6 +42,11 @@
                         <Font name="Segoe UI Bold Italic" size="18.0" />
                      </font>
                   </Label>
+                  <Label layoutX="559.0" layoutY="162.0" text="Barcode:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
                    <Label layoutX="375.0" layoutY="193.0" text="Status:">
                      <font>
                         <Font name="Segoe UI Bold Italic" size="18.0" />
@@ -58,6 +63,11 @@
                      </font>
                   </Label>
                  <Label fx:id="bikeTypeText" layoutX="453.0" layoutY="162.0" text="Electric bike">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bikeBarcodeText" layoutX="638.0" layoutY="162.0" text="AN-123">
                      <font>
                         <Font name="Segoe UI Italic" size="18.0" />
                      </font>

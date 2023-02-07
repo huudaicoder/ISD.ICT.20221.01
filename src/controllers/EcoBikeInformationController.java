@@ -137,7 +137,7 @@ public class EcoBikeInformationController extends EcoBikeBaseController implemen
 		}
 
 		for (Bike b : listAllBikes) {
-			if (b.getBikeBarCode().equals(barCode)) {
+			if (b.getBikeBarCode().toLowerCase().contains(barCode.toLowerCase())) {
 				return b;
 			}
 		}
