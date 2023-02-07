@@ -25,7 +25,7 @@ import utils.Configs;
 
 /**
  * This is the controller for performing transaction on the bank side
- * @author chauntm
+ * @author bienpt
  *
  */
 public class InterbankController {	

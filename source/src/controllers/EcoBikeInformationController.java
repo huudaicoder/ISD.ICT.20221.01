@@ -19,7 +19,7 @@ import utils.DBUtils;
 
 /**
  * This class is in charge of getting information from the database and returns it to the screen handler for displaying
- * @author chauntm
+ * @author daidh
  *
  */
 public class EcoBikeInformationController extends EcoBikeBaseController implements PropertyChangeListener {

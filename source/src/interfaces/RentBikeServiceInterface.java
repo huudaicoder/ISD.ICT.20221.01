@@ -12,7 +12,7 @@ import exceptions.ecobike.RentBikeException;
 /**
  * This interface allow communication between the information subsystem and the rent bike service subsystem
  * Any rent bike service must implement this interface as a loose connection between the subsystems
- * @author chauntm
+ * @author bienpt
  *
  */
 public interface RentBikeServiceInterface {

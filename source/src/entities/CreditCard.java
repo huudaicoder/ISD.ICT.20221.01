@@ -8,7 +8,7 @@ import exceptions.interbank.InvalidCardException;
 
 /**
  * This is the class for object entity Credit card including all information of a card 
- * @author Duong
+ * @author anhnq
  *
  */
 public class CreditCard {

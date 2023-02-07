@@ -5,7 +5,7 @@ import java.util.Date;
 
 /**
  * A time counter is in charge of recording the start time, end time, as well as returning the time a bike is rented
- * @author Hikaru
+ * @author daidh
  *
  */
 public class TimeCounter {

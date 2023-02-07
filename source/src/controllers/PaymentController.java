@@ -14,7 +14,7 @@ import exceptions.ecobike.RentBikeException;
 
 /**
  * This is the class controller including all the methods and operations for payment use case
- * @author Duong
+ * @author anhqn
  *
  */
 public class PaymentController {

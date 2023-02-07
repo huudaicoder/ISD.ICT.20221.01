@@ -24,7 +24,7 @@ import java.util.ResourceBundle;
 /**
  * This is the class handler for bike in dock screen
  *
- * @author Long
+ * @author anhnq
  */
 public class BikeInDockHandler extends EcoBikeBaseScreenHandler {
 

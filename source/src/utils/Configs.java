@@ -3,7 +3,7 @@ package utils;
 
 /**
  * This class provides constants, literals and related functions for generation to use in classes
- * @author chauntm
+ * @author daidh
  */
 public class Configs {
     //renting service related constant

@@ -16,7 +16,7 @@ import utils.Configs;
 import views.screen.EcoBikeBaseScreenHandler;
 /**
  * This is the class hanlder for pop up screen.
- * <br>@author ADMIN
+ * <br>@author anhnq
  *
  */
 public class PopupScreen extends EcoBikeBaseScreenHandler {

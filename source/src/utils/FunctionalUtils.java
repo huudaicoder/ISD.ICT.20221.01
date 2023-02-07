@@ -20,7 +20,7 @@ import exceptions.ecobike.EcoBikeException;
 
 /**
  * This class provides functions for helping processes in classes
- * @author chauntm
+ * @author bienpt
  */
 
 public class FunctionalUtils {

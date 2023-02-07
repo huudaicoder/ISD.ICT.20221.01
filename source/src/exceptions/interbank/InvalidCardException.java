@@ -2,7 +2,7 @@ package exceptions.interbank;
 
 /**
  * This is class exception for case invalid card.
- * <br>@author duong
+ * <br>@author bienpt
  *
  */
 @SuppressWarnings("serial")

@@ -19,6 +19,7 @@ import java.util.HashMap;
 
 /**
  * This class handles rent bike, return bike and pause bike rental request from customers
+ * bienpt
  */
 public class RentBikeController extends EcoBikeBaseController {
 	private static int invoiceCounter = 1;

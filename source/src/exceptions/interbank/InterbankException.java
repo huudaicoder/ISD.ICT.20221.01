@@ -2,7 +2,7 @@ package exceptions.interbank;
 
 /**
  * Exceptions on the interbank side
- * <br>@author chauntm
+ * <br>@author daidh
  */
 
 @SuppressWarnings("serial")

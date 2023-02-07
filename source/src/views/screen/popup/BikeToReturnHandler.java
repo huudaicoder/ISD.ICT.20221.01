@@ -29,7 +29,7 @@ import controllers.EcoBikeInformationController;
 /**
  * This is the class handler for bike in dock screen
  *
- * @author Long
+ * @author daidh
  */
 public class BikeToReturnHandler extends EcoBikeBaseScreenHandler {
 

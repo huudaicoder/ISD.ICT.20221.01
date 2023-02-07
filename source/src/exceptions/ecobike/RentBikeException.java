@@ -2,7 +2,7 @@ package exceptions.ecobike;
 
 /**
  * Exceptions occurs during the renting, returning or pause bike rental process
- * @author chauntm
+ * @author daidh
  */
 public class RentBikeException extends EcoBikeException {
 	public enum RENT_BIKE_ERROR_CODE {

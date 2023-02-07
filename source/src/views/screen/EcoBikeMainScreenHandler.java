@@ -23,7 +23,7 @@ import controllers.EcoBikeInformationController;
 /**
  * This class creates a handler for displaying the map and getting customer's activities on the main screen
  *
- * @author bienpt
+ * @author daidh
  */
 public class EcoBikeMainScreenHandler extends EcoBikeBaseScreenHandler {
 

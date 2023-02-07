@@ -12,7 +12,7 @@ import javafx.scene.image.ImageView;
  * This class spawns a handler for the first splash screen of the EcoBike
  * application
  * 
- * @author chauntm
+ * @author daidh
  *
  */
 public class SplashScreenHandler implements Initializable {

@@ -6,7 +6,7 @@ import entities.PaymentTransaction;
 /**
  * This interface provides functions that the interbank subsystem must be implemented for its communication with other subsystem
  * Any interbank must implement this interface as a loose connection between the subsystems
- * @author chauntm
+ * @author anhqn
  *
  */
 public interface InterbankInterface {

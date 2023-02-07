@@ -2,7 +2,7 @@ package exceptions.ecobike;
 
 /**
  * Undefined exceptions on the Ecobike side
- * @author chauntm
+ * @author bienpt
  */
 public class EcoBikeUndefinedException extends EcoBikeException {
 

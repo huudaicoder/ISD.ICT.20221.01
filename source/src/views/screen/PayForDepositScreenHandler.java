@@ -22,8 +22,7 @@ import views.screen.popup.PopupScreen;
 /**
  * This is the class handler for deposit screen
  *
- * @author Duong
- * @author Bien
+ * @author Bienpt
  */
 public class PayForDepositScreenHandler extends PaymentScreenHandler {
     @FXML
