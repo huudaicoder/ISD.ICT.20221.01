@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #E5FFCC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="6.0" layoutY="7.0" prefHeight="600.0" prefWidth="1200.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="750.0" prefWidth="750.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="500.0" prefHeight="500.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="100.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="152.0" layoutY="32.0" text="Dock information">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="mainScreenIcon" fitHeight="130.0" fitWidth="145.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../detailed_design/interface_design/images/icon/ecoBikeIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="500.0" prefWidth="750.0" GridPane.rowIndex="1">
+               <children>
+                  <ImageView fx:id="dockImageView" fitHeight="200.0" fitWidth="200.0" layoutX="19.0" layoutY="128.0" pickOnBounds="true" />
+                  <Label fx:id="dockNameText" layoutX="301.0" layoutY="54.0" text="Dai Co Viet dock bike">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="241.0" layoutY="114.0" text="Address:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="241.0" layoutY="147.0" text="Dock area:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="241.0" layoutY="182.0" text="Number of docks:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="241.0" layoutY="221.0" text="Number of available bikes:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="241.0" layoutY="258.0" prefHeight="23.0" prefWidth="241.0" text="Number of available docks:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="240.0" layoutY="294.0" text="Distance:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="241.0" layoutY="331.0" text="Estimated walking time:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dockAddressText" layoutX="479.0" layoutY="115.0" text="123 Dai Co Viet, Dong Da, Hanoi">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dockAreaText" layoutX="479.0" layoutY="148.0" text="20m2">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dockCount" layoutX="482.0" layoutY="185.0" text="50">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="distance" layoutX="483.0" layoutY="295.0" text="1.5 km">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="availableDocksCount" layoutX="482.0" layoutY="259.0" text="14">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="availableBikeCount" layoutX="482.0" layoutY="222.0" text="36">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="estimateWalkTime" layoutX="482.0" layoutY="332.0" text="25 mins">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="returnBikeButton" layoutX="297.0" layoutY="406.0" mnemonicParsing="false" style="-fx-border-color: rgb(0, 0, 0); -fx-border-radius: 10;" text="Return bike here">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="444.0" snapToPixel="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <content>
+                  <VBox fx:id="bikeVBox" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #E5FFCC;" />
+               </content>
+            </ScrollPane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fx:id="backIcon" fitHeight="80.0" fitWidth="80.0" layoutX="242.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="@../../../detailed_design/interface_design/images/icon/back_button.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
