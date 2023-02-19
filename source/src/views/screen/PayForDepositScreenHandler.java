@@ -61,7 +61,7 @@ public class PayForDepositScreenHandler extends PaymentScreenHandler {
     	bikeImage.setImage(new Image(new File(Configs.BIKE_IMAGE_LIB + "/" + this.bikeToRent.getBikeImage()).toURI().toString()));
     	bikeName.setText(this.bikeToRent.getName());
     	bikeType.setText(this.bikeToRent.getBikeType());
-    	depositPrice.setText(Double.toString(DepositFactory.getDepositStrategy().getDepositPrice((float)bikeToRent.getDeposit())) + this.bikeToRent.getCurrency());
+    	depositPrice.setText(bikeToRent.getDeposit() + this.bikeToRent.getCurrency());
     }
     
     /**

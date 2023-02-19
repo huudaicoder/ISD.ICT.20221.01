@@ -127,12 +127,12 @@ public class DockInformationScreenHandler extends EcoBikeBaseScreenHandler imple
     	}
         dockNameText.setText(currentDock.getName());
         dockAddressText.setText(currentDock.getDockAddress());
-        dockAreaText.setText(currentDock.getDockArea() + " km2");
+        dockAreaText.setText(currentDock.getDockArea() + " m2");
         dockCount.setText(currentDock.getTotalSpace() + "");
         availableDocksCount.setText(currentDock.getNumDockSpaceFree() + "");
         availableBikeCount.setText(currentDock.getNumAvailableBike() + "");
-        distance.setText("100 km");
-        estimateWalkTime.setText("100 mins");
+        distance.setText("2 km");
+        estimateWalkTime.setText("20 mins");
         addBike(currentBikeList);
         
     	if (currentDock.isOKToAddBike()) {

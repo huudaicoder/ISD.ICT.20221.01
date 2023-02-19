@@ -157,9 +157,9 @@ public class BikeInformationScreenHandler extends EcoBikeBaseScreenHandler imple
         	batteryLabel.setVisible(false);
         	batteryTxt.setVisible(false);
         }
-        bikeDistanceText.setText("100 km");
+        bikeDistanceText.setText("1,4 km");
 //        bikeRentingText.setText(currentBike.getBikeRentalPrice() + " " + currentBike.getCurrency());
-        bikeDepositText.setText(DepositFactory.getDepositStrategy().getDepositPrice((float)currentBike.getDeposit()) + " " + currentBike.getCurrency());
+        bikeDepositText.setText((float)currentBike.getDeposit() + " " + currentBike.getCurrency());
         bikeBarcodeText.setText(currentBike.getBikeBarCode());
         
         if (currentBike.getCurrentDock() != null) {

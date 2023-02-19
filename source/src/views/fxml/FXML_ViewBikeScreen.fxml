@@ -15,7 +15,7 @@
    <children>
       <GridPane layoutX="6.0" layoutY="7.0" prefHeight="600.0" prefWidth="1200.0">
          <children>
-            <Pane prefHeight="100.0" prefWidth="600.0">
+            <Pane prefHeight="100.0" prefWidth="1012.0">
                <children>
                   <Label layoutX="155.0" layoutY="32.0" text="Bike information">
                      <font>
@@ -27,120 +27,111 @@
                         <Image url="@../../../detailed_design/interface_design/images/icon/ecoBikeIcon.png" />
                      </image>
                   </ImageView>
-               </children>
-            </Pane>
-            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" GridPane.rowIndex="1">
-               <children>
-                   <ImageView fx:id="bikeImage" fitHeight="200.0" fitWidth="200.0" layoutX="94.0" layoutY="122.0" pickOnBounds="true" />
-                  <Label fx:id="bikeNameText" layoutX="375.0" layoutY="124.0" text="Electric bike 1236">
-                     <font>
-                        <Font name="Segoe UI Bold" size="24.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="376.0" layoutY="162.0" text="Type:">
-                     <font>
-                        <Font name="Segoe UI Bold Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="559.0" layoutY="162.0" text="Barcode:">
-                     <font>
-                        <Font name="Segoe UI Bold Italic" size="18.0" />
-                     </font>
-                  </Label>
-                   <Label layoutX="375.0" layoutY="193.0" text="Status:">
-                     <font>
-                        <Font name="Segoe UI Bold Italic" size="18.0" />
-                     </font>
-                  </Label>
-                   <Label layoutX="375.0" layoutY="251.0" text="Distance estimated: ">
-                     <font>
-                        <Font name="Segoe UI Bold Italic" size="18.0" />
-                     </font>
-                  </Label>
-                   <Label layoutX="375.0" layoutY="280.0" text="Deposit:">
-                     <font>
-                        <Font name="Segoe UI Bold Italic" size="18.0" />
-                     </font>
-                  </Label>
-                 <Label fx:id="bikeTypeText" layoutX="453.0" layoutY="162.0" text="Electric bike">
-                     <font>
-                        <Font name="Segoe UI Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="bikeBarcodeText" layoutX="638.0" layoutY="162.0" text="AN-123">
-                     <font>
-                        <Font name="Segoe UI Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="bikeStatusText" layoutX="454.0" layoutY="193.0" text="Free">
-                     <font>
-                        <Font name="Segoe UI Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="bikeDepositText" layoutX="454.0" layoutY="280.0" text="120,000 VND">
-                     <font>
-                        <Font name="Segoe UI Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="bikeDistanceText" layoutX="553.0" layoutY="251.0" text="30 km">
-                     <font>
-                        <Font name="Segoe UI Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="bikeLocationTxt" layoutX="464.0" layoutY="222.0" text="Dai Co Viet">
-                     <font>
-                        <Font name="Segoe UI Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="375.0" layoutY="222.0" text="Location:">
-                     <font>
-                        <Font name="Segoe UI Bold Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="batteryTxt" layoutX="638.0" layoutY="193.0" text="Free">
-                     <font>
-                        <Font name="Segoe UI Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="batteryLabel" layoutX="559.0" layoutY="193.0" text="Battery:">
-                     <font>
-                        <Font name="Segoe UI Bold Italic" size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </Pane>
-            <Pane prefHeight="500.0" prefWidth="450.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <children>
-                  <Button fx:id="rentBikeButton" layoutX="60.0" layoutY="139.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="213.0" style="-fx-border-color: rgb(0, 0, 0); -fx-border-radius: 10;" text="Rent this bike">
-                     <font>
-                        <Font name="Segoe UI Bold" size="20.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="pauseBikeButton" disable="true" layoutX="60.0" layoutY="197.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="213.0" style="-fx-border-color: rgb(0, 0, 0); -fx-border-radius: 10;" text="Pause rental">
-                     <font>
-                        <Font name="Segoe UI Bold" size="20.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="returnBikeButton" disable="true" layoutX="60.0" layoutY="258.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="213.0" style="-fx-border-color: rgb(0, 0, 0); -fx-border-radius: 10;" text="Return bike">
-                     <font>
-                        <Font name="Segoe UI Bold" size="20.0" />
-                     </font>
-                  </Button>
-               </children>
-            </Pane>
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
-               <children>
-                  <ImageView fx:id="backIcon" fitHeight="80.0" fitWidth="80.0" layoutX="248.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="backIcon" fitHeight="80.0" fitWidth="80.0" layoutX="937.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                          <Image url="@../../../detailed_design/interface_design/images/icon/back_button.png" />
                      </image>
                   </ImageView>
                </children>
             </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="1117.0" GridPane.rowIndex="1">
+               <children>
+                   <ImageView fx:id="bikeImage" fitHeight="308.0" fitWidth="349.0" layoutX="164.0" layoutY="47.0" pickOnBounds="true" />
+                  <Label fx:id="bikeNameText" layoutX="658.0" layoutY="51.0" text="Electric bike 1236">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="659.0" layoutY="89.0" text="Type:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="920.0" layoutY="93.0" text="Barcode:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                   <Label layoutX="659.0" layoutY="139.0" text="Status:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                   <Label layoutX="659.0" layoutY="238.0" text="Distance estimated: ">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                   <Label layoutX="662.0" layoutY="284.0" text="Deposit:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                 <Label fx:id="bikeTypeText" layoutX="781.0" layoutY="90.0" text="Electric bike">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bikeBarcodeText" layoutX="1024.0" layoutY="93.0" text="AN-123">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bikeStatusText" layoutX="792.0" layoutY="139.0" text="Free">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bikeDepositText" layoutX="784.0" layoutY="284.0" text="120,000 VND">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bikeDistanceText" layoutX="881.0" layoutY="238.0" text="30 km">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bikeLocationTxt" layoutX="792.0" layoutY="191.0" text="Dai Co Viet">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="658.0" layoutY="191.0" text="Location:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="batteryTxt" layoutX="1029.0" layoutY="139.0" text="Free">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="batteryLabel" layoutX="925.0" layoutY="139.0" text="Battery:">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="rentBikeButton" layoutX="232.0" layoutY="381.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="213.0" style="-fx-border-color: rgb(0, 0, 0); -fx-border-radius: 10;" text="Rent this bike">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="returnBikeButton" disable="true" layoutX="551.0" layoutY="381.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="213.0" style="-fx-border-color: rgb(0, 0, 0); -fx-border-radius: 10;" text="Return bike">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pauseBikeButton" disable="true" layoutX="873.0" layoutY="381.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="213.0" style="-fx-border-color: rgb(0, 0, 0); -fx-border-radius: 10;" text="Pause rental">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
          </children>
          <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="750.0" prefWidth="750.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="750.0" prefWidth="1119.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints maxHeight="-Infinity" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />

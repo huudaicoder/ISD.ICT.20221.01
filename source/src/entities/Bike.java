@@ -3,6 +3,7 @@ package entities;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
+import entities.strategies.DepositFactory;
 import exceptions.ecobike.InvalidEcoBikeInformationException;
 import utils.Configs;
 import utils.FunctionalUtils;
@@ -36,6 +37,11 @@ public abstract class Bike {
 	 * The currency of money the credit card uses.
 	 */
 	private String currencyUnit;
+	
+	/**
+	 * The price of the bike.
+	 */
+	private double price;
 	
 	/**
 	 * The amount of deposit customers have to pay before renting the bike.
@@ -154,7 +160,8 @@ public abstract class Bike {
 		this.saddles = Configs.BikeType.getTypeSadde(bikeType);
 		this.pedals = Configs.BikeType.getTypePedals(bikeType);
 		this.rentFactor = Configs.BikeType.getMultiplier(bikeType);
-		this.deposit = Configs.BikeType.getTypePrice(bikeType);
+		this.price = Configs.BikeType.getTypePrice(bikeType);
+		this.deposit = DepositFactory.getDepositStrategy().getDepositPrice((float)this.price);
 	}
 	
 	public float getRentFactor() {
