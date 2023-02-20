@@ -28,6 +28,13 @@ public class TimeCounter {
 		return end;
 	}
 	
+	public Date continueCounter() {
+		if (this.activate) {
+			start = Calendar.getInstance().getTime();
+		}
+		return start;
+	}
+	
 	public void setActive(boolean active) {
 		this.activate = active;
 	}

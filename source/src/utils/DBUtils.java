@@ -86,7 +86,11 @@ public class DBUtils {
 			bikeStat = Configs.BIKE_STATUS.FREE;
 		} else if (bikeStatus.equalsIgnoreCase("RENTED")) {
 			bikeStat = Configs.BIKE_STATUS.RENTED;
-		} else {
+		}
+//		else if (bikeStatus.equalsIgnoreCase("PAUSED")) {
+//			bikeStat = Configs.BIKE_STATUS.PAUSED;
+//		}
+		else {
 			throw new InvalidEcoBikeInformationException("invalid status of bike in database");
 		}
 		bikeRes.setCurrentStatus(bikeStat);
@@ -196,7 +200,11 @@ public class DBUtils {
 			bikeStat = Configs.BIKE_STATUS.FREE;
 		} else if (bikeStatus.equalsIgnoreCase("RENTED")) {
 			bikeStat = Configs.BIKE_STATUS.RENTED;
-		} else {
+		}
+//		else if (bikeStatus.equalsIgnoreCase("PAUSED")) {
+//			bikeStat = Configs.BIKE_STATUS.PAUSED;
+//		} 
+		else {
 			throw new InvalidEcoBikeInformationException("invalid status of bike in database");
 		}
 		bikeRes.setCurrentStatus(bikeStat);
@@ -236,7 +244,11 @@ public class DBUtils {
 				bikeStat = Configs.BIKE_STATUS.FREE;
 			} else if (bikeStatus.equalsIgnoreCase("RENTED")) {
 				bikeStat = Configs.BIKE_STATUS.RENTED;
-			} else {
+			}
+//			else if (bikeStatus.equalsIgnoreCase("PAUSED")) {
+//				bikeStat = Configs.BIKE_STATUS.PAUSED;
+//			}
+			else {
 				throw new InvalidEcoBikeInformationException("invalid status of bike in database");
 			}
 			bikeRes.setCurrentStatus(bikeStat);
@@ -274,7 +286,11 @@ public class DBUtils {
 				bikeStat = Configs.BIKE_STATUS.FREE;
 			} else if (bikeStatus.equalsIgnoreCase("RENTED")) {
 				bikeStat = Configs.BIKE_STATUS.RENTED;
-			} else {
+			}
+//			else if (bikeStatus.equalsIgnoreCase("PAUSED")) {
+//				bikeStat = Configs.BIKE_STATUS.PAUSED;
+//			}
+			else {
 				throw new InvalidEcoBikeInformationException("invalid status of bike in database");
 			}
 			bikeRes.setCurrentStatus(bikeStat);

@@ -134,9 +134,12 @@ public class RentBikeController extends EcoBikeBaseController {
 			}
 		}
 		try {
-			System.out.println("Going to stop counting rent time");
-			tracker.stopCountingRentTime();
-			bike.setCurrentStatus(Configs.BIKE_STATUS.PAUSED);
+			if(bike.getCurrentStatus() != Configs.BIKE_STATUS.PAUSED) {
+				System.out.println("Going to stop counting rent time");
+				tracker.stopCountingRentTime();
+				bike.setCurrentStatus(Configs.BIKE_STATUS.PAUSED);
+//				DBUtils.changeBikeStatus(bike.getBikeBarCode(), Configs.BIKE_STATUS.PAUSED.toString());
+			}
 		} catch (SQLException | EcoBikeException e) {
 			e.printStackTrace();
 		}
@@ -161,6 +164,7 @@ public class RentBikeController extends EcoBikeBaseController {
 		try {
 			tracker.resumeCountingRentTime();
 			bike.setCurrentStatus(Configs.BIKE_STATUS.RENTED);
+//			DBUtils.changeBikeStatus(bike.getBikeBarCode(), Configs.BIKE_STATUS.RENTED.toString());
 		} catch (SQLException | EcoBikeException e) {
 			e.printStackTrace();
 		}
@@ -187,8 +191,10 @@ public class RentBikeController extends EcoBikeBaseController {
 		if (tracker == null) {
 			tracker = DBUtils.getCurrentBikeRenting(bikeToRent);
 		}
-		
-		int period = tracker.stopCountingRentTime();
+		int period = 0;
+		System.out.println(bikeToRent.getCurrentStatus().toString());
+		period = tracker.getRentedTime();
+
 		float rentCost = calculateFee(bikeToRent.getRentFactor(), period);
 		
 		PaymentTransaction transaction = interbankSystem.payRental(card, rentCost, "PAY_RENTAL");

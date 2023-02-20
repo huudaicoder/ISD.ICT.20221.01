@@ -38,7 +38,7 @@ public class BikeTracker {
 	
 	public int stopCountingRentTime() throws SQLException, EcoBikeException {
 		this.endTime = timeCounter.stopCounter();
-		this.timeRented = (int)((this.endTime.getTime() - this.startTime.getTime()) / (1000 * 60) %60);
+		this.timeRented += (int)((this.endTime.getTime() - this.startTime.getTime()) / (1000 * 60) %60);
 		System.out.println("Start time: " + startTime.toString());
 		System.out.println("End time: " + endTime.toString());
 		System.out.println("Rent period is: " + this.timeRented);
@@ -47,7 +47,7 @@ public class BikeTracker {
 	}
 	
 	public void resumeCountingRentTime() throws SQLException, EcoBikeException {
-		timeCounter.startCounter();
+		this.startTime = timeCounter.continueCounter();
 	}
 	
 	public void addTransaction(PaymentTransaction trans) throws SQLException, EcoBikeException {
