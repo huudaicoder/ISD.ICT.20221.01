@@ -13,9 +13,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <BorderPane fx:id="borPane_main" layoutX="7.0" prefHeight="600.0" prefWidth="1200.0">
+      <BorderPane fx:id="borPane_main" layoutX="-2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1200.0">
          <top>
-            <Pane fx:id="headerPane" prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: E5FFCC;" BorderPane.alignment="CENTER">
+            <Pane fx:id="headerPane" prefHeight="100.0" prefWidth="1066.0" style="-fx-background-color: E5FFCC;" BorderPane.alignment="CENTER">
                <children>
                   <ImageView fx:id="imgv_logo" fitHeight="132.0" fitWidth="189.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
                      <image>

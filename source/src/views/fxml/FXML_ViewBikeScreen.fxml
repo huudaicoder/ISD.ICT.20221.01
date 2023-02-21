@@ -29,7 +29,7 @@
                   </ImageView>
                   <ImageView fx:id="backIcon" fitHeight="80.0" fitWidth="80.0" layoutX="937.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                         <Image url="@../../../detailed_design/interface_design/images/icon/back_button.png" />
+                         <Image url="@../../../../detailed_design/interface_design/images/icon/back_button.png" />
                      </image>
                   </ImageView>
                </children>
